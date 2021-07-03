@@ -211,10 +211,15 @@ html.textoMaior {
   .grid-section {
     grid-template-columns: 100px 1fr;
     grid-gap: 10px;
+    margin-bottom: 0.2rem;
   }
 
   .animais-lista {
-    grid-column: 1;
+    grid-column: 1 / 4;
+  } 
+
+  .animais-descricao {
+    grid-column: 1 / 4;
   }
 
   .faq-lista, .dados, .mapa{
@@ -227,6 +232,7 @@ html.textoMaior {
 
   .menu {
     margin-top: 0px;
+    font-size: 1rem;
   }
 
   .copy {
@@ -234,7 +240,7 @@ html.textoMaior {
   }
 }
 
-@media (max-width: 699px){
+/* @media (max-width: 700px){
 
   .grid-section {
     margin-bottom: 1rem;
@@ -260,7 +266,7 @@ html.textoMaior {
   .grid-section h1 {
     font-size: 3rem;
   }
-}
+} */
 
 /* Imagens */
 .js .js-tabcontent section {
